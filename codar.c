@@ -1,24 +1,24 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int main(){
-    int idade, matricula;
-    float altura;
-    char nome[50];
+int main (){
+    int nota1, nota2, nota3;
+    int media;
 
-    printf("Digite sua idade: \n");
-    scanf("%d", &idade);
+    printf("*** Programa de cálculo de média ***\n");
 
-    printf("Digite sua altura: \n");
-    scanf("%f", &altura);
+    printf("Digite a sua primeira nota: \n");
+    scanf("%d", &nota1);
 
-    printf("Digite seu nome: \n");
-    scanf("%s", &nome);
+    printf("Digite a sua segunda nota: \n");
+    scanf("%d", &nota2);
 
-    printf("Digite sua matricula: \n");
-    scanf("%d", &matricula);
+    printf("Digite a sua terceira nota: \n");
+    scanf("%d", &nota3);
 
-    printf("Nome do aluno: %s - Matricula: %d\n", nome, matricula);
-    printf("Idade: %d - Altura: %f", idade, altura);
+    media = (nota1 + nota2 + nota3) / 3;
+    
+    printf("A média é: %d\n", media);
 
     return 0;
+
 }
